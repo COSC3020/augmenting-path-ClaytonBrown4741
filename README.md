@@ -31,4 +31,7 @@ accordingly.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
-answer, including your reasoning, to this markdown file.
+answer, including your reasoning, to this markdown file.  
+
+**PLEASE NOTE:**:  
+The tests work for this code as of right now. I plan to do the runtime analysis later.
