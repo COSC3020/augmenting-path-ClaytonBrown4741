@@ -48,5 +48,9 @@ So in the end, the runtime would be $\Theta(|V|^2 + |V| + |V| + |E|)$ which give
 time of $\Theta(|V|^2 + |E|)$.  
 (Please let me know if any of this reasoning is bad or off. The one I'm most concerned with is the  
 runtime for checking if the nodes have already been visited or not, so please let me know if that  
-is wrong in any way so that I may fix it).
+is wrong in any way so that I may fix it).  
+
+**NOTE**: I apologize about how weird my code looked the last time you saw this. I reused a lot of  
+code from Dijkstra's Algorithm, and forgot to get rid of the unnecessary parts. It should be  
+better now.
 
