@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12547999&assignment_repo_type=AssignmentRepo)
 # Augmenting Paths
 
 When we talked about the Ford-Fulkerson algorithm to find the maximum flow
@@ -30,4 +31,19 @@ accordingly.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
-answer, including your reasoning, to this markdown file.
+answer, including your reasoning, to this markdown file.  
+
+**ANSWER**:  
+The first thing we end up doing is initializing the visitedNodes array for further  
+use. Because this goes over each node, the runtime would |V| amount of time.   
+Finally, we have the loop which actually navigates the graph. This will go over every  
+node and also go over every possible edge. Because we're checking whether each node has  
+been visited before, it means that they can't be visited more than once. As a result,  
+the runtime for this section would be |V|+|E|.  
+So in the end, the runtime would be $\Theta(|V| + |V| + |E|)$ which gives us a simplified  
+time of $\Theta(|V| + |E|)$.  
+(Please let me know if any of this reasoning is bad or off. The one I'm most concerned with is the  
+runtime for checking if the nodes have already been visited or not, so please let me know if that  
+is wrong in any way so that I may fix it).  
+
+
