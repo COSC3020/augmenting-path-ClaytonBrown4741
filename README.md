@@ -35,22 +35,15 @@ answer, including your reasoning, to this markdown file.
 
 **ANSWER**:  
 The first thing we end up doing is initializing the visitedNodes array for further  
-use. Because this goes over each node, the runtime would |V| amount of time.  
-Next up, checking whether each node has been visited will take |V| amount of time  
-since it has to go through every single node. In addition to this, it will run for  
-every node which means that we get a final runtime of $|V|^2$ over the course of the  
-entire runtime.  
+use. Because this goes over each node, the runtime would |V| amount of time.   
 Finally, we have the loop which actually navigates the graph. This will go over every  
 node and also go over every possible edge. Because we're checking whether each node has  
 been visited before, it means that they can't be visited more than once. As a result,  
 the runtime for this section would be |V|+|E|.  
-So in the end, the runtime would be $\Theta(|V|^2 + |V| + |V| + |E|)$ which gives us a simplified  
-time of $\Theta(|V|^2 + |E|)$.  
+So in the end, the runtime would be $\Theta(|V| + |V| + |E|)$ which gives us a simplified  
+time of $\Theta(|V| + |E|)$.  
 (Please let me know if any of this reasoning is bad or off. The one I'm most concerned with is the  
 runtime for checking if the nodes have already been visited or not, so please let me know if that  
 is wrong in any way so that I may fix it).  
 
-**NOTE**: I apologize about how weird my code looked the last time you saw this. I reused a lot of  
-code from Dijkstra's Algorithm, and forgot to get rid of the unnecessary parts. It should be  
-better now.
 
